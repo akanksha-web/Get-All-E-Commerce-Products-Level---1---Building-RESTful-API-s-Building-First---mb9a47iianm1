@@ -12,7 +12,7 @@ app.use(express.json());
 app.get("/api/v1/products", (req, res) =>{
   
 
-  if(product && products.length > 0){
+  if(products && products.length > 0){
     res.status(200).json({
             status: 'success',
             message: 'Product fetched successfully',
