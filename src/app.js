@@ -11,10 +11,11 @@ app.use(express.json());
 // Write GET endpoint for sending all the products to client here
 app.get("/api/v1/products", (req, res) =>{
   
-  const product = products.find();
-  if(product){
+
+  if(product && products.length > 0){
     res.status(200).json({
             status: 'success',
+            message: 'Product fetched successfully',
             data: {
                 products: product
             }
