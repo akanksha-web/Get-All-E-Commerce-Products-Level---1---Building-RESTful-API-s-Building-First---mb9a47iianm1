@@ -17,7 +17,7 @@ app.get("/api/v1/products", (req, res) =>{
             status: 'success',
             message: 'Product fetched successfully',
             data: {
-                products: product
+                products: products
             }
         });
   }else{
